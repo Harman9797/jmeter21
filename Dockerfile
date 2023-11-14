@@ -19,7 +19,7 @@ RUN    apk update
 RUN  apk upgrade 
 RUN apk add ca-certificates 
 # RUN update-ca-certificates 
-RUN     apk add --update openjdk21-jre --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing tzdata curl unzip bash \
+RUN     apk add --update openjdk21-jre --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community tzdata curl unzip bash \
         && apk add --no-cache nss \
         && rm -rf /var/cache/apk/* \
         && mkdir -p /tmp/dependencies  \
